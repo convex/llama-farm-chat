@@ -40,15 +40,15 @@ run-local-backend *ARGS:
       pkg=convex-local-backend-x86_64-unknown-linux-gnu.zip
     fi
     if [ -z "$pkg" ]; then
-      echo "Download or build the convex-local-backend: https://github.com/get-convex/convex-backend"
+      echo "Download or build the convex-local-backend: https://github.com/convex/convex-backend"
       exit 1
     fi
-    curl  -L -O "https://github.com/get-convex/convex-backend/releases/latest/download/$pkg"
+    curl  -L -O "https://github.com/convex/convex-backend/releases/latest/download/$pkg"
     unzip "$pkg"
   fi
   ./convex-local-backend
 
-# Taken from https://github.com/get-convex/convex-backend/blob/main/Justfile
+# Taken from https://github.com/convex/convex-backend/blob/main/Justfile
 # (*) Run convex CLI commands like `convex dev` against local backend from `just run-local-backend`.
 # This uses the default admin key for local backends, which is safe as long as the backend is
 # running locally.

@@ -46,7 +46,7 @@ export default function App() {
           <LlamaStatus />
           <div className="flex h-full items-center justify-end gap-4  p-2">
             <a
-              href="https://github.com/get-convex/llama-farm-chat"
+              href="https://github.com/convex/llama-farm-chat"
               className="hidden md:block"
             >
               <Button
